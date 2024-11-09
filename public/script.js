@@ -1,4 +1,4 @@
-const socket = io();
+const socket = io('https://tic-tac-toe-oxso.onrender.com');
 
 const cells = document.querySelectorAll(".cell");
 const statusText = document.querySelector("#statusText")
