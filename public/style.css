@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #38d9a9;
+    height: 100vh;               /* Makes the body full height */
+    display: flex;               /* Centers content horizontally and vertically */
+    justify-content: center;     /* Centers horizontally */
+    align-items: center;
+    
+}
+
+#gameContainer{
+    font-family: "Permanent Marker",cursive;
+    text-align: center;
+}
+
+#cellContainer{
+    display:grid;
+    grid-template-columns: repeat(3,auto); 
+    width:235px;
+    margin:auto;
+}
+
+.cell{
+    width:75px;
+    height:75px;
+    border: 2px solid black;
+    box-shadow: 0 0 0 2px;
+    font-size:3rem;
+    cursor:pointer;
+}
+
+.win{
+    font-size: 2rem;
+    color:blue;
+}
+
+#restartBtn{
+    border-radius: 5px;
+    border:0;
+    background-color: #ffd43b;
+    padding: 10px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+}
